@@ -17,7 +17,7 @@ class Params {
 		title="Suppression";
 		values[]={0,1,2};
 		default=1;
-		texts[]={"Disabled","TPCAS","TPW EBS"};
+		texts[]={"Disabled","TPWCAS","TPW EBS"};
 	};
  
   class ani_tpwlos {
@@ -50,8 +50,8 @@ class Params {
   
   class ani_enemy_faction {
 		title="Enemy faction";
-		values[]={0,4,5,6};
+		values[]={0,2,4,5,6};
 		default=6;
-		texts[]={"CSAT", "GRU Russians by massi", "African Rebel Army by massi", "African Rebel civilians by massi"};
+		texts[]={"CSAT", "AAF", "GRU Russians by massi", "AFR Army by massi", "AFR Rebels by massi"};
 	};
 };

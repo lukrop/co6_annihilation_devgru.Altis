@@ -37,6 +37,7 @@ ani_revive = paramsArray select 6;
 // 4 = GRU Russian by massi
 // 5 = African Rebel Army by massi
 // 6 = African Rebel civilians by massi
+// 7 = USSOCOM DEVGRU by massi
 ani_enemyFaction = paramsArray select 7;
 
 switch (ani_enemy_skill) do {
@@ -78,11 +79,6 @@ if(ani_acre == 1) then {
 
 // disable saving
 enableSaving [false, false];
-
-// set Date/Time
-setDate [2035,09,30,ani_daytime,0];
-// mcc_sandbox bug workaround
-[[0,0,0], "STATE:", ["time > 15", "setDate [2035,09,30,ani_daytime,0];", ""]] call CBA_fnc_createTrigger;
 
 // Viewdistance script
 [] execVM "taw_vd\init.sqf";
